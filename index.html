@@ -1,51 +1,145 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="PT-BR">
+
+<style>
+
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.sobre {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.sobre img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.sobre h2 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.projetos {
+  background-color: #ecf0f1;
+  padding: 40px;
+  text-align: center;
+}
+
+.projetos h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.projetos ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.projetos li {
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.projetos li a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.projetos li a:hover {
+  color: #3498db;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}   
+
+</style>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xbox Gaming</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Christopher - Portfólio</title>
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <h1>XBOX</h1>
-        
-    </header>
-    
-    <!-- Conteúdo Principal -->
-    <main>
-        <section id="inicio">
-            <h1>Bem-vindo ao Xbox</h2>
-            <p>Descubra a melhor experiência de jogos com os consoles e serviços Xbox.</p>
-            <a href="explorar.html"><button>explorar</button></a>
-        </section>
-        
-        <section id="jogos">
-            <h2>Jogos Populares</h2>
-            <p>Confira os jogos mais jogados este mês:</p>
-        
-            <a href="todos-jogos.html">Ver todos os jogos</a>
-        </section>
-        
-        <section id="consoles">
-            <h2>Consoles Xbox</h2>
-            <p>Escolha o Xbox perfeito para suas necessidades de jogo:</p>
-            <a href="consoles-Xbox.html"><button>consoles-Xbox</button></a>
-        </section>
-        
-        <section id="assinatura">
-            <h2>Xbox Game Pass</h2>
-            <p>Acesse centenas de jogos por uma assinatura mensal.</p>
-            <a href="assine-agora.html"><button>Assine Agora</button></a>
-        </section>
-    </main>
-    
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2025 Xbox Gaming. Todos os direitos reservados.</p>
-    </footer>
-    
+<header>
+  <h1>Christopher Diogo</h1>
+  <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section id="sobre" class="sobre">
+  <img src="https://tangaradaserra.mt.gov.br/wp-content/uploads/2025/04/tecnologia.png" alt="Foto">
+  <div>
+    <h2>Sobre mim</h2>
+    <p>Olá! Tenho 16 anos e sou estudante de Análise e Desenvolvimento de Sistemas. Busco aprender novas tecnologias e criar projetos incríveis. Meu objetivo é me tornar um desenvolvedor.</p>
+  </div>
+</section>
+
+<section id="projetos" class="projetos">
+  <h2>Projetos</h2>
+  <ul>
+    <!-- atalho para a pasta atividade conforme solicitado -->
+    <li><a href="atividade/index.html">Atividade</a></li>
+  </ul>
+</section>
+
+<footer id="contato">
+  <p>Email: christioher.daniel@escola.pr.gov.br | GitHub</p>
+</footer>
+
 </body>
 </html>
